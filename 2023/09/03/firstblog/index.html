@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#222">
+  <meta name="generator" content="Hexo 6.3.0">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.svg">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic%7CPingFang+SC:300,300italic,400,400italic,700,700italic%7CMicrosoft+YaHei:300,300italic,400,400italic,700,700italic%7Csans-serif:300,300italic,400,400italic,700,700italic%7CLobster+Two:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic%7Cmonospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic%7CPingFang+SC:300,300italic,400,400italic,700,700italic%7CMicrosoft+YaHei:300,300italic,400,400italic,700,700italic%7Csans-serif:300,300italic,400,400italic,700,700italic%7CLobster+Two:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic%7Cmonospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"
+    integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"lion10.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+  <script class="next-config" data-name="main"
+    type="application/json">{"hostname":"lion10.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script>
+  <script src="/js/config.js"></script>
 
-    <meta name="description" content="Here I write about Compilers and their transformations.Optimizations, effects on binary generation……">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Compilers">
-<meta property="og:url" content="https://lion10.github.io/2023/09/03/firstblog/index.html">
-<meta property="og:site_name" content="Hush_0x">
-<meta property="og:description" content="Here I write about Compilers and their transformations.Optimizations, effects on binary generation……">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-03T10:28:15.462Z">
-<meta property="article:modified_time" content="2023-09-03T13:51:25.440Z">
-<meta property="article:author" content="OMAR">
-<meta property="article:tag" content="compiler">
-<meta property="article:tag" content="llvm">
-<meta name="twitter:card" content="summary">
+  <meta name="description"
+    content="Here I write about Compilers and their transformations.Optimizations, effects on binary generation……">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Compilers">
+  <meta property="og:url" content="https://lion10.github.io/2023/09/03/firstblog/index.html">
+  <meta property="og:site_name" content="Hush_0x">
+  <meta property="og:description"
+    content="Here I write about Compilers and their transformations.Optimizations, effects on binary generation……">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2023-09-03T10:28:15.462Z">
+  <meta property="article:modified_time" content="2023-09-03T13:51:25.440Z">
+  <meta property="article:author" content="OMAR">
+  <meta property="article:tag" content="compiler">
+  <meta property="article:tag" content="llvm">
+  <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://lion10.github.io/2023/09/03/firstblog/">
+  <link rel="canonical" href="https://lion10.github.io/2023/09/03/firstblog/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lion10.github.io/2023/09/03/firstblog/","path":"2023/09/03/firstblog/","title":"Compilers"}</script>
+  <script class="next-config" data-name="page"
+    type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lion10.github.io/2023/09/03/firstblog/","path":"2023/09/03/firstblog/","title":"Compilers"}</script>
 
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Compilers | Hush_0x</title>
-  
+  <script class="next-config" data-name="calendar" type="application/json">""</script>
+  <title>Compilers | Hush_0x</title>
+
 
 
 
@@ -61,99 +71,112 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="site-brand-container">
+          <div class="site-nav-toggle">
+            <div class="toggle" aria-label="Toggle navigation bar" role="button">
+              <span class="toggle-line"></span>
+              <span class="toggle-line"></span>
+              <span class="toggle-line"></span>
+            </div>
+          </div>
 
-  <div class="site-meta">
+          <div class="site-meta">
 
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">Hush_0x</p>
-      <i class="logo-line"></i>
-    </a>
-  </div>
+            <a href="/" class="brand" rel="start">
+              <i class="logo-line"></i>
+              <p class="site-title">Hush_0x</p>
+              <i class="logo-line"></i>
+            </a>
+          </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/aboutme" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
-  </ul>
-</nav>
-
-
-
-
-</header>
-        
-  
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-style"><span class="nav-number">1.</span> <span class="nav-text">Code style</span></a></li></ol></div>
+          <div class="site-nav-right">
+            <div class="toggle popup-trigger" aria-label="Search" role="button">
+            </div>
+          </div>
         </div>
-        <!--/noindex-->
 
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="OMAR"
-      src="https://avatars.githubusercontent.com/u/31984164?v=4">
-  <p class="site-author-name" itemprop="name">OMAR</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author animated">
-      <span class="links-of-author-item">
-        <a href="https://github.com/lion10" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lion10" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:omar.abusabha.98@gmail.com" title="E-Mail → mailto:omar.abusabha.98@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
 
+
+        <nav class="site-nav">
+          <ul class="main-menu menu">
+            <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+            <li class="menu-item menu-item-about"><a href="/aboutme" rel="section"><i
+                  class="fa fa-user fa-fw"></i>About</a></li>
+            <li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+
+      </header>
+
+
+      <aside class="sidebar">
+
+        <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+          <ul class="sidebar-nav">
+            <li class="sidebar-nav-toc">
+              Table of Contents
+            </li>
+            <li class="sidebar-nav-overview">
+              Overview
+            </li>
+          </ul>
+
+          <div class="sidebar-panel-container">
+            <!--noindex-->
+            <div class="post-toc-wrap sidebar-panel">
+              <div class="post-toc animated">
+                <ol class="nav">
+                  <li class="nav-item nav-level-3"><a class="nav-link" href="#Code-style"><span
+                        class="nav-number">1.</span> <span class="nav-text">Code style</span></a></li>
+                </ol>
+              </div>
+            </div>
+            <!--/noindex-->
+
+            <div class="site-overview-wrap sidebar-panel">
+              <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <img class="site-author-image" itemprop="image" alt="OMAR"
+                  src="https://avatars.githubusercontent.com/u/31984164?v=4">
+                <p class="site-author-name" itemprop="name">OMAR</p>
+                <div class="site-description" itemprop="description"></div>
+              </div>
+              <div class="site-state-wrap animated">
+                <nav class="site-state">
+                  <div class="site-state-item site-state-posts">
+                    <a href="/archives/">
+                      <span class="site-state-item-count">1</span>
+                      <span class="site-state-item-name">posts</span>
+                    </a>
+                  </div>
+                  <div class="site-state-item site-state-tags">
+                    <a href="/tags">
+                      <span class="site-state-item-count">2</span>
+                      <span class="site-state-item-name">tags</span></a>
+                  </div>
+                </nav>
+              </div>
+              <div class="links-of-author animated">
+                <span class="links-of-author-item">
+                  <a href="https://github.com/lion10" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lion10"
+                    rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+                </span>
+                <span class="links-of-author-item">
+                  <a href="mailto:omar.abusabha.98@gmail.com" title="E-Mail → mailto:omar.abusabha.98@gmail.com"
+                    rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+                </span>
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    
-  </aside>
+
+      </aside>
 
 
     </div>
@@ -161,107 +184,123 @@
     <div class="main-inner post posts-expand">
 
 
-  
 
 
-<div class="post-block">
-  
-  
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://lion10.github.io/2023/09/03/firstblog/">
+      <div class="post-block">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars.githubusercontent.com/u/31984164?v=4">
-      <meta itemprop="name" content="OMAR">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hush_0x">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Compilers | Hush_0x">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Compilers
-        </h1>
+        <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+          <link itemprop="mainEntityOfPage" href="https://lion10.github.io/2023/09/03/firstblog/">
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/31984164?v=4">
+            <meta itemprop="name" content="OMAR">
+          </span>
 
-      <time title="Created: 2023-09-03 19:28:15 / Modified: 22:51:25" itemprop="dateCreated datePublished" datetime="2023-09-03T19:28:15+09:00">2023-09-03</time>
-    </span>
+          <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="Hush_0x">
+            <meta itemprop="description" content="">
+          </span>
 
-  
-</div>
+          <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="name" content="Compilers | Hush_0x">
+            <meta itemprop="description" content="">
+          </span>
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">
+              Compilers
+            </h1>
 
-        </div>
-      </header>
+            <div class="post-meta-container">
+              <div class="post-meta">
+                <span class="post-meta-item">
+                  <span class="post-meta-item-icon">
+                    <i class="far fa-calendar"></i>
+                  </span>
+                  <span class="post-meta-item-text">Posted on</span>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody"><p>Here I write about Compilers and their transformations.<br>Optimizations, effects on binary generation……</p>
-<span id="more"></span>
-<h3 id="Code-style"><a href="#Code-style" class="headerlink" title="Code style"></a>Code style</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-    </div>
+                  <time title="Created: 2023-09-03 19:28:15 / Modified: 22:51:25" itemprop="dateCreated datePublished"
+                    datetime="2023-09-03T19:28:15+09:00">2023-09-03</time>
+                </span>
 
-    
-    
-    
 
-    <footer class="post-footer">
-          <div class="post-tags">
+              </div>
+
+            </div>
+          </header>
+
+
+
+
+          <div class="post-body" itemprop="articleBody">
+            <p>Here I write about Compilers and their transformations.<br>Optimizations, effects on binary generation……
+            </p>
+            <span id="more"></span>
+            <h3 id="Code-style"><a href="#Code-style" class="headerlink" title="Code style"></a>Code style</h3>
+            <figure class="highlight bash">
+              <table>
+                <tr>
+                  <td class="gutter">
+                    <pre><span class="line">1</span><br></pre>
+                  </td>
+                  <td class="code">
+                    <pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre>
+                  </td>
+                </tr>
+              </table>
+            </figure>
+
+          </div>
+
+
+
+
+
+          <footer class="post-footer">
+            <div class="post-tags">
               <a href="/tags/compiler/" rel="tag"># compiler</a>
               <a href="/tags/decompiler/" rel="tag"># decompiler</a>
               <a href="/tags/malware/" rel="tag"># malware</a>
               <a href="/tags/rehosting/" rel="tag"># rehosting</a>
               <a href="/tags/rehosting/" rel="tag"># web</a>
-          </div>
-
-        
-
-    </footer>
-  </article>
-</div>
+            </div>
 
 
+
+          </footer>
+        </article>
+      </div>
 
 
 
 
-</div>
+
+
+    </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
 
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2025</span>
-    <span class="with-love">
-      <i class="fa fa-superpowers"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">OMAR</span>
-  </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
-  </div>
+      <div class="copyright">
+        &copy;
+        <span itemprop="copyrightYear">2025</span>
+        <span class="with-love">
+          <i class="fa fa-superpowers"></i>
+        </span>
+        <span class="author" itemprop="copyrightHolder">OMAR</span>
+      </div>
+      <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a
+          href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+      </div>
 
     </div>
   </footer>
 
-  
+
   <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -273,33 +312,41 @@
     <span>0%</span>
   </div>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
-
-  
+  <noscript>
+    <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+  </noscript>
 
 
 
-
-
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="/js/comments.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/motion.js"></script>
+  <script src="/js/schemes/muse.js"></script>
+  <script src="/js/next-boot.js"></script>
 
 
 
 
-  
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script>
+  <script class="next-config" data-name="mathjax"
+    type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script src="/js/third-party/math/mathjax.js"></script>
 
 
 
 </body>
+
 </html>
